@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  test:
+    build: .
+    command: nodemon -L --inspect=0.0.0.0:5858
+    volumes:
+      - .:/project
+    ports:
+      - "8000:8000"
+      - "9229:9229"
