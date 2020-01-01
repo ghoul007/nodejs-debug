@@ -3,7 +3,7 @@ version: "3"
 services:
   test:
     build: .
-    command: nodemon -L --inspect=0.0.0.0:5858
+    command: nodemon -L --inspect=0.0.0.0:9229
     volumes:
       - .:/project
     ports:
